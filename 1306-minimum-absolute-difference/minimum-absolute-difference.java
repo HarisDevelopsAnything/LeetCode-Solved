@@ -2,8 +2,8 @@ import java.util.*;
 
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
-        int mindiff = Math.abs(arr[0] - arr[1]);
         Arrays.sort(arr);
+        int mindiff = arr[1] - arr[0];
         for(int i=1;i<arr.length;i++){
                 if(mindiff > arr[i] - arr[i-1]) mindiff = Math.abs(arr[i]-arr[i-1]);
         }
