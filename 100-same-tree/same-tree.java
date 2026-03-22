@@ -45,6 +45,6 @@ class Solution {
         return res;
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        return (inorder(p).equals(inorder(q)) && preorder(p).equals(preorder(q)) && postorder(p).equals(postorder(q)));
+        return (inorder(p).equals(inorder(q)) && preorder(p).equals(preorder(q)));// && postorder(p).equals(postorder(q)));
     }
 }
